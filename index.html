@@ -1,24 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Privacy Policy - Service-Ding</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy / Datenschutzerklärung - Service-Ding</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      max-width: 900px;
+      max-width: 920px;
       margin: 40px auto;
-      line-height: 1.6;
-      color: #222;
+      line-height: 1.65;
+      color: #1f1f1f;
+      padding: 0 16px;
     }
-    .lang-switch {
+    .top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
       margin-bottom: 20px;
     }
     .lang-switch button {
-      padding: 6px 12px;
-      margin-right: 10px;
+      padding: 8px 14px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      background: #fff;
       cursor: pointer;
+      margin-left: 8px;
+    }
+    .lang-switch button.active {
+      border-color: #111;
+      font-weight: bold;
     }
     .lang {
       display: none;
@@ -26,83 +39,202 @@
     .lang.active {
       display: block;
     }
+    .card {
+      border: 1px solid #eee;
+      border-radius: 14px;
+      padding: 18px;
+      margin: 18px 0;
+    }
+    h1, h2 {
+      margin-top: 0;
+    }
+    ul {
+      margin-left: 22px;
+    }
+    .muted {
+      color: #666;
+    }
+    a {
+      color: #0b57d0;
+    }
   </style>
 </head>
 <body>
 
-<div class="lang-switch">
-  <button onclick="setLang('en')">English</button>
-  <button onclick="setLang('de')">Deutsch</button>
+<div class="top">
+  <div>
+    <h1>Privacy Policy / Datenschutzerklärung</h1>
+    <div class="muted">Service-Ding</div>
+  </div>
+  <div class="lang-switch">
+    <button id="btn-en" class="active" onclick="setLang('en')">English</button>
+    <button id="btn-de" onclick="setLang('de')">Deutsch</button>
+  </div>
 </div>
 
+<!-- ENGLISH -->
 <div id="en" class="lang active">
-  <h1>Privacy Policy</h1>
 
-  <p>Service-Ding (“we”, “our”, “us”) respects your privacy.</p>
+  <div class="card">
+    <p><strong>Effective Date:</strong> January 29, 2026</p>
+    <p><strong>Application Name:</strong> Service-Ding</p>
+    <p><strong>Company:</strong> two-run it-solutions GmbH</p>
+    <p><strong>Address:</strong> Frankfurt am Main, Hessen, Germany</p>
+    <p><strong>Contact:</strong> <a href="mailto:office@two-run.com">office@two-run.com</a></p>
+  </div>
 
-  <h2>Data Collection</h2>
-  <p>
-    This application does not collect, store, or share any personal data such as
-    name, email address, phone number, payment information, or location data.
-  </p>
+  <div class="card">
+    <h2>1. Introduction</h2>
+    <p>
+      This Privacy Policy describes how two-run it-solutions GmbH collects, processes,
+      stores, and protects personal data obtained through the Service-Ding mobile and web application.
+    </p>
+    <p>
+      Service-Ding is a service management platform that enables restaurants and cafés
+      to organize and operate a waiter call system efficiently.
+    </p>
+  </div>
 
-  <h2>Third-Party Services</h2>
-  <p>
-    The app does not use third-party services that collect user data.
-  </p>
+  <div class="card">
+    <h2>2. Data Collected</h2>
+    <ul>
+      <li>Business type</li>
+      <li>Business name</li>
+      <li>Business location</li>
+      <li>Business or personal phone number</li>
+      <li>Email address</li>
+      <li>Business floor names</li>
+      <li>Business working days</li>
+      <li>Business opening and closing hours</li>
+    </ul>
+  </div>
 
-  <h2>Children’s Privacy</h2>
-  <p>
-    This application is not directed to children under the age of 13.
-  </p>
+  <div class="card">
+    <h2>3. Purposes of Data Processing</h2>
+    <ul>
+      <li>Identity verification and account creation</li>
+      <li>User support and communication</li>
+      <li>Account and system management</li>
+      <li>Sending verification codes</li>
+      <li>Delivering system notifications</li>
+    </ul>
+  </div>
 
-  <h2>Changes to This Policy</h2>
-  <p>
-    Any changes to this privacy policy will be updated on this page.
-  </p>
+  <div class="card">
+    <h2>4. Data Sharing with Third Parties</h2>
+    <ul>
+      <li>OpenRemote</li>
+      <li>SMS providers</li>
+      <li>Cloud and hosting providers</li>
+    </ul>
+  </div>
 
-  <h2>Contact</h2>
-  <p>
-    support@serviceding.app
-  </p>
+  <div class="card">
+    <h2>5. Data Retention</h2>
+    <p>
+      Data is retained while the account is active and deleted permanently
+      15 days after account deletion.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>6. Data Security</h2>
+    <p>
+      All data is stored on secure servers within Germany and the EU,
+      protected by encryption and access controls.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>7. User Rights</h2>
+    <ul>
+      <li>Access to personal data</li>
+      <li>Correction of inaccurate data</li>
+      <li>Deletion of data</li>
+      <li>Restriction or objection to processing</li>
+      <li>Data portability</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>8. Cookies</h2>
+    <p>No cookies are currently used.</p>
+  </div>
+
+  <div class="card">
+    <h2>9. Emails and Notifications</h2>
+    <p>
+      The application may send emails or notifications for system or promotional purposes.
+      Consent can be withdrawn at any time.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>10. Underage Users</h2>
+    <p>
+      Users under 18 are responsible for obtaining necessary consent.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>11. Policy Changes</h2>
+    <p>This policy may be updated periodically.</p>
+  </div>
+
 </div>
 
+<!-- GERMAN -->
 <div id="de" class="lang">
-  <h1>Datenschutzerklärung</h1>
 
-  <p>Service-Ding respektiert Ihre Privatsphäre.</p>
+  <div class="card">
+    <p><strong>Gültig ab:</strong> 29. Januar 2026</p>
+    <p><strong>Anwendungsname:</strong> Service-Ding</p>
+    <p><strong>Unternehmen:</strong> two-run it-solutions GmbH</p>
+    <p><strong>Adresse:</strong> Frankfurt am Main, Hessen, Deutschland</p>
+    <p><strong>Kontakt:</strong> <a href="mailto:office@two-run.com">office@two-run.com</a></p>
+  </div>
 
-  <h2>Datenerhebung</h2>
-  <p>
-    Diese Anwendung erhebt, speichert oder teilt keine personenbezogenen Daten wie
-    Name, E-Mail-Adresse, Telefonnummer, Zahlungsinformationen oder Standortdaten.
-  </p>
+  <div class="card">
+    <h2>1. Einleitung</h2>
+    <p>
+      Diese Datenschutzerklärung beschreibt, wie die two-run it-solutions GmbH personenbezogene
+      Daten erhebt, verarbeitet, speichert und schützt.
+    </p>
+  </div>
 
-  <h2>Dienste von Drittanbietern</h2>
-  <p>
-    Die App verwendet keine Dienste von Drittanbietern, die Nutzerdaten erfassen.
-  </p>
+  <div class="card">
+    <h2>2. Erhobene Daten</h2>
+    <ul>
+      <li>Art des Unternehmens</li>
+      <li>Name des Unternehmens</li>
+      <li>Standort</li>
+      <li>Telefonnummer</li>
+      <li>E-Mail-Adresse</li>
+      <li>Etagen</li>
+      <li>Arbeitstage</li>
+      <li>Öffnungs- und Schließzeiten</li>
+    </ul>
+  </div>
 
-  <h2>Datenschutz von Kindern</h2>
-  <p>
-    Diese Anwendung richtet sich nicht an Kinder unter 13 Jahren.
-  </p>
+  <div class="card">
+    <h2>3. Zweck der Verarbeitung</h2>
+    <ul>
+      <li>Kontoerstellung</li>
+      <li>Support und Kommunikation</li>
+      <li>Systemverwaltung</li>
+      <li>Verifizierung</li>
+    </ul>
+  </div>
 
-  <h2>Änderungen dieser Datenschutzerklärung</h2>
-  <p>
-    Änderungen dieser Datenschutzerklärung werden auf dieser Seite veröffentlicht.
-  </p>
-
-  <h2>Kontakt</h2>
-  <p>
-    support@serviceding.app
-  </p>
 </div>
 
 <script>
   function setLang(lang) {
     document.querySelectorAll('.lang').forEach(el => el.classList.remove('active'));
     document.getElementById(lang).classList.add('active');
+    document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+    document.getElementById('btn-de').classList.toggle('active', lang === 'de');
+    document.documentElement.lang = lang;
   }
 </script>
 
